@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a normal survey form that you need to fill</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+            <label for="edu">Educational Institute:</label><br>
+            <input type="text" name="edu" id="edu" placeholder="Enter your institute name"><br>
+            <fieldset id="location">
+                <legend>Your location</legend>
+                <label for="province">Province:</label><br>
+                <select name="province" id="province">
+                    <option disabled selected value>Select your Province</option>
+                    <option value="1">Province 1</option>
+                    <option value="2">Province 2</option>
+                    <option value="3">Province 3</option>
+                    <option value="4">Province 4</option>
+                    <option value="5">Province 5</option>
+                    <option value="6">Province 6</option>
+                    <option value="7">Province 7</option>
+                </select><br>
+                <label for="district">District:</label><br>
+                <input type="text" name="district" id="district" placeholder="Your District"><br>
+
+            </fieldset>
+            <label for="number" id="number-label">Age:</label><br>
+            <input type="number" name="number" id="number" min="14" max="25"><br>
+            <fieldset id="radio">
+                <legend>Do you want exam to happen?</legend>
+                <input type="radio" name="Yes" id="Yes" checked>Yes, Definately<br>
+                <input type="radio" name="No" id="No">No, Never<br>
+                <input type="radio" name="Maybe" id="Maybe">Maybe<br>
+            </fieldset>
+            <label for="dropdown" id="dropdown-label">When do you think exam should be taken:</label><br>
+            <select id="dropdown">
+                <option disabled selected value>Select the options</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+            </select><br>
+            <fieldset>
+                <legend>Alternatives Government should consider</legend>
+                <input type="checkbox" name="online" id="online">Online exams<br>
+                <input type="checkbox" name="regular" id="regular">Regular exams<br>
+                <input type="checkbox" name="half" id="half">Half Regular and Half Online<br>
+                <input type="checkbox" name="noexam" id="noexam">No Exam<br>
+                <input type="checkbox" name="studloc" id="studloc">Exam should be taken where students are<br>
+            </fieldset>
+            <label for="textarea" id="textarea-label">Comments on the government activities:</label><br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Type your text here"></textarea><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
